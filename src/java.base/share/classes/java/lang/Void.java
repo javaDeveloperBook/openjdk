@@ -30,6 +30,9 @@ package java.lang;
  * reference to the {@code Class} object representing the Java keyword
  * void.
  *
+ *  Void 类是一个不可实例化的占位符类，
+ *  用于保存对表示 Java 关键字 void 的 Class 对象的引用。
+ *
  * @author  unascribed
  * @since   1.1
  */
@@ -39,12 +42,16 @@ class Void {
     /**
      * The {@code Class} object representing the pseudo-type corresponding to
      * the keyword {@code void}.
+     *
+     * Class 对象表示与关键字 void 对应的伪类型。
      */
     @SuppressWarnings("unchecked")
     public static final Class<Void> TYPE = (Class<Void>) Class.getPrimitiveClass("void");
 
     /*
      * The Void class cannot be instantiated.
+     *
+     * Void类无法实例化。
      */
     private Void() {}
 }
